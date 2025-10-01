@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3e8ff; 
+}
+
+#game {
+  width: 350px; 
+  margin: 0 auto;
+  position: relative;
+}
+
+#game header {
+  position: relative;
+  text-align: center;
+}
+
+#game header h1 {
+  color: rgb(163, 26, 26);
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 4rem 0 2rem;  
+  position: relative;
+  z-index: 10; 
+}
+
+#game header img {
+  width: 90px; 
+  position: absolute;
+  transform: translateX(-150%) rotate(-2deg);
+}
+
+.board {
+  margin-bottom: 3rem; 
+}
+
+.board .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.board .row:not(:last-child) {
+  border-bottom: 3px solid #d11252; 
+}
+
+.board .row > .cell:not(:last-child) {
+  border-right: 3px solid #333d78; 
+}
+
+.board .cell {
+  color: rgb(136, 16, 16);
+  cursor: pointer; 
+  height: 100px; 
+  font-size: 2rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board .cell:hover {
+  background-color: rgb(100, 10, 10);
+}
+
+.actions {
+  text-align: center;
+}
+
+.actions button {
+  font-size: 0.75rem; 
+  height: 44px; 
+  cursor: pointer;
+  color: rgb(206, 18, 27);
+  padding: 0 1.5rem; 
+  background-color: rgb(189, 4, 50);
+  border: none;
+  appearance: none;
+  border-radius: 6px;
+}
+
+.gameover {
+  color: rgb(165, 26, 49);
+  font-size: 2.2rem; 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 310px; 
+  background-color: rgba(189, 21, 63, 0.8);
+}
