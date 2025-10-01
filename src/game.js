@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import scara from "./img/scara.png";
 
 const defaulgame = [
     ['', '', ''],
@@ -51,6 +50,10 @@ export default function Game() {
     return (
         <section id="game">
             <header>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/ff/CRVG_logo.svg/1200px-CRVG_logo.svg.png"
+                alt="Logo do Vasco da Gama"
+            />
                 <h1>Jogo da Velha</h1>
             </header>
 
